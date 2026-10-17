@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Tout part de Toi — Lettre d’octobre 2026</title>
+<meta name="description" content="Lettre d’octobre 2026 : ralentir avec l’automne, Café Psycho, pratique de saison et démarrage de Tout part de Toi — L’atelier." />
+<style>
+:root{
+  --ink:#3e2c33;
+  --muted:#75646a;
+  --paper:#fbf1e3;
+  --card:#fffaf2;
+  --plum:#5a3048;
+  --plum-deep:#472238;
+  --wine:#704257;
+  --rose:#d5a18e;
+  --terracotta:#b87560;
+  --gold:#d5aa62;
+  --line:#e3cdbb;
+  --sand:#f4dfca;
+  --cream:#fff7e9;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.72}
+a{color:var(--plum);font-weight:600;text-underline-offset:3px}
+.wrap{width:min(860px,calc(100% - 32px));margin:0 auto}
+.topbar{padding:15px 20px;font-family:Arial,Helvetica,sans-serif;font-size:.78rem;letter-spacing:.17em;text-transform:uppercase;text-align:center;background:var(--plum-deep);color:#f7e8ce;border-bottom:1px solid rgba(213,170,98,.55)}
+.hero{padding:72px 0 62px;text-align:center;background:linear-gradient(135deg,var(--plum-deep) 0%,var(--plum) 58%,#6b3a53 100%);border-bottom:3px solid var(--gold);color:#fff7e9}
+.eyebrow{font-family:Arial,Helvetica,sans-serif;text-transform:uppercase;letter-spacing:.18em;font-size:.77rem;color:var(--plum);font-weight:700;margin-bottom:18px}
+.hero .eyebrow{color:var(--gold)}
+h1{font-weight:400;font-size:clamp(2.5rem,6vw,4.6rem);line-height:1.04;margin:0 auto 18px;max-width:760px;color:#fff8eb}
+.lead{font-size:1.2rem;max-width:650px;margin:0 auto;color:#ead9d2}
+.spark{margin-top:24px;color:var(--gold);letter-spacing:.45em}
+section{padding:54px 0;border-bottom:1px solid var(--line)}
+h2{font-size:2rem;font-weight:400;line-height:1.2;margin:0 0 22px;color:var(--plum-deep)}
+h3{font-size:1.25rem;margin:30px 0 10px;font-weight:600;color:var(--plum-deep)}
+p{margin:0 0 16px}
+.photo{display:block;width:100%;border-radius:22px;box-shadow:0 14px 34px rgba(71,34,56,.12);margin:26px 0 16px}
+.caption{font-family:Arial,Helvetica,sans-serif;font-size:.8rem;color:var(--muted);text-align:center;margin-top:-2px}
+.quote{margin:30px 0;padding:22px 26px;border-left:5px solid var(--gold);background:#fff9f0;font-size:1.26rem;font-style:italic;color:var(--plum-deep);box-shadow:0 8px 24px rgba(71,34,56,.06)}
+.practice{background:#fff9f1;border:1px solid #e6c9b8;border-radius:18px;padding:28px;margin-top:28px;box-shadow:0 10px 30px rgba(71,34,56,.045)}
+.practice strong{font-size:1.1rem}
+.columns{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:18px}
+.mini{background:#fffaf2;border:1px solid #e2c4b3;border-radius:14px;padding:18px}
+.mini b{display:block;margin-bottom:8px;color:var(--plum-deep)}
+.workshop{background:linear-gradient(145deg,#fff7eb 0%,#f8e5da 62%,#f2d7ca 100%);padding:62px 0;border-top:3px solid var(--gold);border-bottom:3px solid var(--gold)}
+.workshop .kicker{display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;padding:7px 12px;border-radius:999px;color:#fff5e5;background:var(--plum);margin-bottom:16px}
+.workshop h2{font-size:clamp(2.2rem,5vw,3.7rem);margin-bottom:8px}
+.workshop .sub{font-size:1.35rem;font-style:italic;margin-bottom:28px;color:var(--wine)}
+.workshop-visual{display:block;width:100%;border-radius:20px;margin:28px 0 32px;box-shadow:0 14px 34px rgba(71,34,56,.12)}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:26px 0}
+.card{background:rgba(255,250,242,.95);border:1px solid #dfc2b2;border-radius:18px;padding:22px}
+.card h3{margin-top:0}
+.list{padding-left:0;list-style:none;margin:14px 0}
+.list li{margin:9px 0;padding-left:24px;position:relative}
+.list li:before{content:"✦";position:absolute;left:0;color:var(--terracotta)}
+.price{background:var(--plum);color:#fff7e9;border-radius:18px;padding:24px;margin:24px 0;box-shadow:0 8px 20px rgba(71,34,56,.16)}
+.price strong{font-size:1.55rem;color:#fff7e9}
+.cta{display:inline-block;margin-top:12px;background:var(--plum);color:#fff7e9;text-decoration:none;padding:13px 20px;border-radius:999px;font-family:Arial,Helvetica,sans-serif;font-size:.9rem;box-shadow:0 6px 16px rgba(71,34,56,.15)}
+.cta.alt{background:var(--terracotta)}
+
+.review-ask{margin-top:28px;padding:22px 24px;border-radius:18px;background:#fff9f0;border-left:5px solid var(--gold)}
+.review-ask p:last-child{margin-bottom:0}
+.review-ask .cta{margin-top:4px}
+
+.cabinet{background:#fff8ed}
+.closing{text-align:center;padding:58px 0 68px}
+.closing p{max-width:650px;margin-left:auto;margin-right:auto}
+.closing .last{font-size:2rem;font-style:italic;margin-top:22px;color:var(--plum-deep)}
+footer{font-family:Arial,Helvetica,sans-serif;font-size:.8rem;text-align:center;color:var(--muted);padding:28px 0 42px;border-top:1px solid var(--line)}
+.small{font-size:.92rem;color:var(--muted)}
+@media(max-width:680px){
+  .hero{padding:54px 0 48px}
+  .topbar{font-size:.7rem}
+  section{padding:42px 0}
+  .wrap{width:min(100% - 22px,860px)}
+  .columns,.info-grid{grid-template-columns:1fr}
+  .practice,.card,.price{border-radius:14px;padding:20px}
+}
+</style>
+</head>
+<body>
+<div class="topbar">Tout part de Toi — Newsletter • Octobre 2026</div>
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">La lettre d’octobre</div>
+    <h1>Et si l’automne ne nous demandait pas d’en faire plus… mais autrement&nbsp;?</h1>
+    <p class="lead">Ralentir, écouter son énergie, choisir ce que l’on nourrit.</p>
+    <div class="spark">✦ ✧ ✦</div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <p>J’ai mis du temps à vous écrire ce mois-ci.</p>
+    <p>Pas par manque d’envie.</p>
+    <p>Mais parce que beaucoup d’entre vous sont arrivé·es au cabinet ces dernières semaines.</p>
+    <p>De nouveaux visages, de nouvelles histoires, de nouvelles manières d’être au monde.</p>
+    <p>Et je mesure à chaque fois <strong>l’honneur et le privilège que représente le fait de vous accompagner.</strong></p>
+    <p>J’aime particulièrement ce temps du début.</p>
+    <p>Celui où j’apprends à vous connaître. Où j’écoute votre rythme, vos mots, vos silences, ce qui vous fait rire, ce qui vous inquiète, ce qui revient souvent.</p>
+    <p>Et où, peu à peu, je crée <strong>une place pour vous à l’intérieur de moi.</strong></p>
+    <p>Une place singulière. Pas interchangeable.</p>
+    <p>C’est aussi cela, pour moi, la relation thérapeutique.</p>
+
+    <img class="photo" src="cafe-psycho-octobre.jpg" alt="Café Psycho d'octobre chez Où cours-tu ?" />
+    <div class="caption">Café Psycho du 10 octobre — 12 participant·es</div>
+
+    <p style="margin-top:26px">Et puis, samedi 10 octobre, vous étiez <strong>12 au Café Psycho</strong>.</p>
+    <p>12 personnes réunies pour parler de l’énergie d’automne, de fatigue, de rythme, de ralentissement et de ce décalage que beaucoup ressentent sans toujours savoir le nommer.</p>
+
+    <div class="quote">La société nous demande souvent d’accélérer au moment même où le vivant commence à ralentir.</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Le temps social et le temps biologique</div>
+    <h2>Ils ne racontent pas tout à fait la même chose</h2>
+    <p>En septembre et en octobre, le temps social repart très fort.</p>
+    <p>La rentrée. Les projets. Les inscriptions. Les rendez-vous. Les objectifs. Les agendas qui se remplissent.</p>
+    <p>Comme si l’année commençait vraiment là.</p>
+    <p>Mais biologiquement, quelque chose d’autre se passe.</p>
+    <p>Les jours raccourcissent. La lumière diminue. Les températures baissent. Le corps reçoit progressivement des signaux qui l’invitent davantage au repos, au recentrage, à l’économie d’énergie.</p>
+    <p>Chez beaucoup de personnes, cela peut se traduire par une fatigue plus présente, un besoin de sommeil accru, plus de difficulté à se mettre en route, une envie de rester davantage chez soi, une plus grande sensibilité émotionnelle ou simplement moins d’élan pour faire autant qu’en juin.</p>
+    <p><strong>Et ce n’est pas forcément un problème à corriger.</strong></p>
+    <p>C’est peut-être parfois simplement un rythme à entendre.</p>
+    <p>Nous avons tendance à penser que notre énergie devrait rester stable toute l’année. Mais le vivant ne fonctionne pas comme ça.</p>
+    <p>Il alterne. Il pousse. Il fleurit. Il produit. Puis il ralentit. Il trie. Il laisse tomber. Il conserve.</p>
+    <div class="quote">Et si nous faisions partie du vivant nous aussi&nbsp;?</div>
+
+    <div class="practice">
+      <div class="eyebrow">Une petite pratique</div>
+      <h2>Qu’est-ce qui mérite encore votre énergie&nbsp;?</h2>
+      <p>Prenez une feuille et tracez trois colonnes.</p>
+      <div class="columns">
+        <div class="mini"><b>1. Ce que je veux continuer à nourrir</b><span>Un lien, un projet, une habitude, quelque chose qui me fait du bien.</span></div>
+        <div class="mini"><b>2. Ce que je peux ralentir</b><span>Ce qui peut avancer moins vite sans disparaître.</span></div>
+        <div class="mini"><b>3. Ce que je peux laisser tomber</b><span>Une obligation, une attente, une manière de faire qui coûte trop.</span></div>
+      </div>
+      <p style="margin-top:20px">Ne réfléchissez pas trop. Notez ce qui vient.</p>
+      <p>Puis regardez votre feuille et demandez-vous&nbsp;:</p>
+      <p><strong>Si je n’avais pas la même quantité d’énergie qu’au printemps, où ai-je vraiment envie de la mettre&nbsp;?</strong></p>
+      <p>L’automne n’est peut-être pas seulement une saison où l’on perd de la lumière.</p>
+      <p>C’est aussi une période où l’on peut apprendre à <strong>choisir ce que l’on garde.</strong></p>
+      <p>Et parfois, ralentir ne veut pas dire renoncer.</p>
+      <p><strong>Cela veut simplement dire mettre son énergie là où elle compte vraiment.</strong></p>
+    </div>
+  </div>
+</section>
+
+<section class="workshop" id="atelier">
+  <div class="wrap">
+    <span class="kicker">Ça démarre très bientôt</span>
+    <h2>Tout part de Toi — L’atelier</h2>
+    <div class="sub">31 octobre & 1er novembre 2026</div>
+
+    <img class="workshop-visual" src="tout-part-de-toi-atelier.png" alt="Tout part de Toi — L'atelier, un espace pour ralentir, respirer et créer" />
+
+    <p>Et cette question de l’énergie, du corps, du rythme et du vivant sera justement au cœur de <strong>Tout part de Toi — L’atelier</strong>.</p>
+    <p>Le premier week-end aura lieu les <strong>31 octobre & 1er novembre 2026</strong> à <strong>Où cours-tu ? — Lyon 9e, métro Valmy</strong>.</p>
+    <p><strong>Et il est encore possible de rejoindre le groupe.</strong></p>
+    <p>Un week-end par mois jusqu’en juin pour sortir un peu du rythme habituel et retrouver le corps, le mouvement, la respiration, la créativité, le jeu, l’écriture, la voix, la relation — et surtout un peu plus de vivant.</p>
+
+    <div class="info-grid">
+      <div class="card">
+        <h3>En solo… ou à deux</h3>
+        <p>Vous pouvez rejoindre l’atelier seul·e, avec votre partenaire ou avec une amie.</p>
+        <p>Venir à deux ne signifie pas tout faire ensemble. Chacun·e garde son espace, son rythme, ses limites et ses expériences.</p>
+        <p>Mais partager ce chemin peut permettre de se découvrir autrement, de retrouver du jeu et de créer de nouveaux souvenirs.</p>
+      </div>
+      <div class="card">
+        <h3>Après un burn-out… ou avant</h3>
+        <p>Sortir de l’épuisement ne consiste pas seulement à « se reposer ».</p>
+        <p>Il faut parfois réapprendre à sentir, écouter ses limites, retrouver du plaisir, remettre du mouvement là où tout s’est figé et créer sans objectif de performance.</p>
+        <p>Cet espace peut aussi être précieux en prévention, notamment quand on est entrepreneur·e, indépendant·e, aidant·e ou habitué·e à beaucoup porter pour les autres.</p>
+      </div>
+    </div>
+
+    <div class="price">
+      <strong>Tarif : 420 € pour l’année complète</strong><br>
+      Paiement possible en plusieurs fois. Quelques places sont encore disponibles.
+    </div>
+
+    <ul class="list">
+      <li>Premier week-end : 31 octobre & 1er novembre 2026</li>
+      <li>Un week-end par mois jusqu’en juin 2027</li>
+      <li>Où cours-tu ? — 35 Grande Rue de Vaise, Lyon 9e</li>
+      <li>12 participant·es maximum</li>
+    </ul>
+
+    <p><strong>Vous vous demandez simplement : « Est-ce que cet atelier pourrait être pour moi ? »</strong></p>
+    <p>Écrivez-moi. En parler ensemble ne vous engage évidemment à rien.</p>
+    <a class="cta" href="mailto:toutpartdetoi@gmail.com">M’écrire pour en parler</a>
+  </div>
+</section>
+
+<section class="cabinet">
+  <div class="wrap">
+    <div class="eyebrow">Et au cabinet…</div>
+    <h2>Merci pour votre confiance</h2>
+    <p>Les accompagnements individuels et de couple continuent au cabinet de Valmy et en visio.</p>
+    <p>Et ce mois-ci, j’ai simplement envie de vous dire merci.</p>
+    <p>Merci pour votre confiance. Merci de venir déposer des choses parfois très fragiles. Merci de me permettre d’entrer un peu dans vos histoires.</p>
+    <p>C’est un métier qui demande beaucoup de présence. Mais c’est aussi un métier qui me touche profondément.</p>
+
+    <div class="review-ask">
+      <p><strong>Vous avez participé à un Café Psycho, un atelier, ou été accompagné·e au cabinet&nbsp;?</strong></p>
+      <p>Si vous en avez l’élan, laisser quelques mots sur Google aide d’autres personnes à se faire une idée plus concrète de mon travail et, parfois, à oser franchir le pas.</p>
+      <a class="cta" href="https://g.page/r/CVOLIF1rvnBpEAE/review" target="_blank" rel="noopener">Laisser un avis Google</a>
+    </div>
+
+    <a class="cta alt" href="https://calendly.com/emilie-treynet-gestalt/seance-individuelle" target="_blank" rel="noopener">Prendre rendez-vous</a>
+  </div>
+</section>
+
+<div class="closing wrap">
+  <p>Je ne vais pas vous souhaiter davantage d’énergie.</p>
+  <p>Je vais plutôt vous souhaiter de pouvoir entendre celle que vous avez.</p>
+  <p>De savoir où elle veut aller. De reconnaître quand elle baisse. Et de ne pas toujours prendre le ralentissement pour un échec.</p>
+  <p><strong>Peut-être que l’automne ne nous demande pas de devenir moins vivant·es.<br>Peut-être qu’il nous invite simplement à vivre autrement.</strong></p>
+  <div class="last">Belle traversée de l’automne.</div>
+</div>
+
+<footer class="wrap">
+  <strong>Émilie TREYNET</strong><br>
+  Psycho-praticienne Gestalt • Individuel • Couple • Médiations artistiques<br>
+  <strong>Tout part de Toi</strong><br><br>
+  <a href="https://emilietreynetgestalt.com" target="_blank" rel="noopener">emilietreynetgestalt.com</a> ·
+  <a href="mailto:toutpartdetoi@gmail.com">toutpartdetoi@gmail.com</a>
+</footer>
+</body>
+</html>
